@@ -1,0 +1,92 @@
+body {
+    background-color: bisque;
+
+.sobre-mim {
+    display: flex;
+    margin: 1%;
+    padding: 1%; /* Adicione margens para espaçamento */
+}
+.sobre-mim img {
+    width: 20%;
+    margin-right: 10%;
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+}
+.sobre-mim .descricao {
+    width: 70%;
+    font-size: 20px;
+}
+
+.sobre-mim .habilidades {
+    list-style-type: disc; /* Define as bolinhas */
+    font-size: 16px; /* Tamanho da fonte das habilidades */
+    margin-top: 10px; /* Espaçamento superior */
+    border: 1px solid #000; /* Adiciona uma borda preta de 1px */
+    border-radius: 10px; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adiciona um sombreamento */
+    
+}
+
+.formacao, .idiomas {
+    flex: 1; /* Distribui o espaço igualmente entre eles */
+    padding: 20px; 
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
+    margin: 10px;
+}
+
+.portfolio, .contato {
+    margin: 1%;
+    border-radius: 1rem;
+    border: 1px solid #000; /* Adiciona uma borda preta de 1px */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adiciona um sombreamento */
+    padding-left: 1rem;
+
+}
+
+.formacao-idiomas {
+    display: flex; /* Torna os filhos lado a lado */
+    text-align: center;
+}
+
+.formacao .uni{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.idiomas {
+    display: flex;
+    flex-direction: column; /* Os itens ficarão em coluna */
+}
+
+.idiomas li {
+    margin-bottom: 10px; /* Espaçamento entre os idiomas */
+}
+
+.portfolio {
+    flex-wrap: wrap; /* Permite que os projetos quebrem para a próxima linha */
+}
+
+.projeto {
+    flex: 0 0 calc(33.33% - 20px); /* Distribui igualmente em 3 colunas com margens */
+    margin: 10px; /* Espaçamento entre os projetos */
+    border: 1px solid #ddd; /* Adicione bordas para visualização */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.projeto img {
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.projeto:hover {
+    transform: scale(1.3); /* Escala de 110% ao passar o mouse */
+}
+
+.figcaption {
+    font-size: 14px;
+    color: #666;
+}
+.contato {
+    text-align: center;
+    background-color: lightgray;
+}
